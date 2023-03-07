@@ -50,16 +50,21 @@ nav {
 }
 
 .nav-right {
-  cursor: pointer;
-  z-index: 100;
   display: flex;
   align-items: center;
 }
 
+.nav-right svg {
+  cursor: pointer;
+  z-index: 10;
+}
+
 .btn-toggle {
+  cursor: pointer;
   width: 2.5em;
   margin-right: 1em;
   filter: invert(100%);
+  z-index: 2;
 }
 
 body.dark-mode .btn-toggle {
@@ -67,6 +72,7 @@ body.dark-mode .btn-toggle {
 }
 
 .links {
+  z-index: 4;
   position: absolute;
   background: var(--background-color);
   width: 100%;
